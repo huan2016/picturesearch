@@ -1,5 +1,7 @@
 package com.kb210.videoplay.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.kb210.videoplay.mapper.ConnectMapper;
@@ -11,8 +13,10 @@ public class ConnectServiceImpl implements IConnectService {
 	@Autowired
 	private ConnectMapper connectMapper;
 	
-	public String findById_Time(Integer videoid, String currenttime){
-		return connectMapper.findById_Time(videoid,currenttime);
+	
+
+	public List<Integer> findCommodityId(Integer videoid, String currenttime) {
+		return connectMapper.findCommodityId(videoid, currenttime);
 		
 	}
 	

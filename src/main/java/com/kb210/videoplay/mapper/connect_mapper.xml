@@ -3,9 +3,9 @@
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.kb210.videoplay.mapper.ConnectMapper">
-    <select id="findById_Time"  resultType="String">
+    <select id="findCommodityId"  resultType="int">
 	<![CDATA[
-	SELECT picture FROM video_picture_tbl WHERE videoid = #{videoid} AND videolabel LIKE #{currenttime}
+	SELECT DISTINCT commodityid FROM video_picture_tbl WHERE videoid = #{videoid} AND videolabel LIKE #{currenttime}
 	]]>
 	</select>
 </mapper>

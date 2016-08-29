@@ -7,6 +7,7 @@
 		<result property="videoname" column="videoname" />
 		<result property="path" column="path" />
 		<result property="description" column="description" />
+		<result property="post" column="post" />
 		<result property="uploadtime" column="uploadtime" />
     </resultMap>	
 </mapper>

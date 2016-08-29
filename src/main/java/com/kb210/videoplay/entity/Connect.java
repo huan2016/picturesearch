@@ -4,7 +4,7 @@ public class Connect {
 	private Integer id;
 	private int videoid;
 	private String videolabel;
-	private String picture;
+	private int commodityid;
 	public Integer getId() {
 		return id;
 	}
@@ -23,12 +23,13 @@ public class Connect {
 	public void setVideolabel(String videolabel) {
 		this.videolabel = videolabel;
 	}
-	public String getPicture() {
-		return picture;
+	public int getCommodityid() {
+		return commodityid;
 	}
-	public void setPicture(String picture) {
-		this.picture = picture;
+	public void setCommodityid(int commodityid) {
+		this.commodityid = commodityid;
 	}
+
 	
 
 }

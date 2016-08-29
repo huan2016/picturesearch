@@ -76,21 +76,16 @@
 								class="video-js vjs-default-skin vjs-big-play-centered" controls
 								preload="auto" width="700" height="400"
 								poster="<c:url value="/res/images/post.jpg"/>" data-setup="{}">
-								<source src="<c:url value="/res/video/video1.mp4"/>"
-									type='video/mp4'>
-								<source src="<c:url value="/res/video/video1.mp4"/>"
-									type='video/ogg; codecs="theora,vorbis"'>
-								<source src="<c:url value="/res/video/video1.mp4"/>"
-									type='video/webm'>
+								<source src="<c:url value="/res/video/video2.mp4"/>"type='video/mp4'>
+								<source src="<c:url value="/res/video/video2.mp4"/>"type='video/ogg; codecs="theora,vorbis"'>
+								<source src="<c:url value="/res/video/video2.mp4"/>"type='video/webm'>
 							</video>
 						</div>
 					</div>
 					<div id="sidebar" class="col-1-3">
 						<!---- Start Widget ---->
 						<div class="widget wid-post">
-							<div class="wid-header" id="search">
-								<h5>Products</h5>
-							</div>
+						     <button style="width:357px;height:42px" id="search">搜同款</button>
 							<div class="wid-content" id="photo"></div>
 						</div>
 					</div>
@@ -122,6 +117,7 @@
 	var player = videojs('my_video_1');
 	var pathlist;
 	var i;
+	var temp;
 	var currenttime;
 	player.on('pause', function() {
 		currenttime = player.currentTime();
@@ -137,14 +133,21 @@
 				},
 				function(data, status) {
 					pathList = data.content;
-					var root = '<c:url value="/"/>';
-					for (i = 0; i < pathList.length; i++) {
-						console.log(pathList[i]);
-						var temp = '<div class="post wrap-vid"><div class="zoom-container"><img src="' + root + pathList[i] + '" /> '
-								+ '</div></div>';
-						console.log(temp);
-						$("#photo").append(temp);
+					for (i = 0; i < pathList.length; i++){
+						console.log(pathList[i].id);
+						console.log(pathList[i].name);
+						console.log(pathList[i].post);
+						console.log(pathList[i].url);
+						
 					}
+					
+					//var root = '/resource/image1/';
+					//for (i = 0; i < pathList.length; i++) {
+						//temp = '<div class="post wrap-vid"><div class="zoom-container"><img src="' + root + pathList[i] + '" /> '
+							//	+ '</div></div>';
+						//console.log(temp);
+					//	$("#photo").append(temp);
+					//}           <h3 class="vid-name"><a >Video's Name</a></h3>
 				}
 			);
 		});

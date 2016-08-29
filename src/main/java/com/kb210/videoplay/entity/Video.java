@@ -7,6 +7,7 @@ public class Video {
 	private String videoname;
 	private String path;
 	private String description;
+	private String post;
 	private Date uploadtime;
 	public Integer getId() {
 		return id;
@@ -37,6 +38,12 @@ public class Video {
 	}
 	public void setUploadtime(Date uploadtime) {
 		this.uploadtime = uploadtime;
+	}
+	public String getPost() {
+		return post;
+	}
+	public void setPost(String post) {
+		this.post = post;
 	}
 	
 

@@ -6,6 +6,6 @@
 		<result property="id" column="id" />
 		<result property="videoid" column="videoid" />
 		<result property="videolabel" column="videolabel" />
-		<result property="picture" column="picture" />
+		<result property="commodityid" column="commodityid" />
     </resultMap>	
 </mapper>

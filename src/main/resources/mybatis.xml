@@ -5,6 +5,7 @@
 	<typeAliases>
 		<typeAlias alias="video" type="com.kb210.videoplay.entity.Video" />
 		<typeAlias alias="connect" type="com.kb210.videoplay.entity.Connect" />
+		<typeAlias alias="commodity" type="com.kb210.videoplay.entity.Commodity"/>
 	</typeAliases>
 
 </configuration>
