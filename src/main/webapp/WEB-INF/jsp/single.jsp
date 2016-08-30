@@ -76,9 +76,9 @@
 								class="video-js vjs-default-skin vjs-big-play-centered" controls
 								preload="auto" width="700" height="400"
 								poster="<c:url value="/res/images/post.jpg"/>" data-setup="{}">
-								<source src="<c:url value="/res/video/video2.mp4"/>"type='video/mp4'>
-								<source src="<c:url value="/res/video/video2.mp4"/>"type='video/ogg; codecs="theora,vorbis"'>
-								<source src="<c:url value="/res/video/video2.mp4"/>"type='video/webm'>
+								<source src="/resource/video2.mp4"type='video/mp4'>
+								<source src="/resource/video2.mp4"type='video/ogg; codecs="theora,vorbis"'>
+								<source src="/resource/video2.mp4"type='video/webm'>
 							</video>
 						</div>
 					</div>
@@ -94,6 +94,7 @@
 		</section>
 	</div>
 <!-- Slider -->
+
 <script src="<c:url value="/res/js/jquery-2.1.1.js"/>"></script>
 <script src="<c:url value="/res/js/demo.js"/>"></script>
 <!-- Search -->
@@ -140,8 +141,14 @@
 						console.log(pathList[i].url);
 						
 					}
+					var root = '/resource/image1/';
+					for(i=0;i<pathList.length;i++){
+						temp = '<div class="post wrap-vid"><div class="zoom-container"> <a href="'+pathList[i].url+'"><img src="' + root + pathList[i].post + '" /> </a>'
+							+ '</div><h3 class="vid-name"><a >'+pathList[i].name+'</a></h3></div>';
+
+					$("#photo").append(temp);
+					}
 					
-					//var root = '/resource/image1/';
 					//for (i = 0; i < pathList.length; i++) {
 						//temp = '<div class="post wrap-vid"><div class="zoom-container"><img src="' + root + pathList[i] + '" /> '
 							//	+ '</div></div>';

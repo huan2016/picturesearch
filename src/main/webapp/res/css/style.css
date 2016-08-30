@@ -248,7 +248,7 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 }
 .zoom-container img {
 	display: block;
-	width:140px;
+	width:124px;
 	height: 70px;
 	-webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
