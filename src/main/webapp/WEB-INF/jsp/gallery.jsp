@@ -43,21 +43,20 @@
 		<!--////////////////////////////////////Menu-->
 		<nav class="cmn-tile-nav">
 			<ul class="clearfix">
-				<li class="colour-1"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-1"><a href="<c:url value="/"/>">首页</a></li>
+				<li class="colour-2"><a href="<c:url value="/"/>">shopping
 						search</a></li>
-				<li class="colour-2"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-3"><a href="<c:url value="/"/>">shopping
 						search</a></li>
-				<li class="colour-3"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-4"><a href="<c:url value="/"/>">shopping
 						search</a></li>
-				<li class="colour-4"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-5"><a href="<c:url value="/"/>">shopping
 						search</a></li>
-				<li class="colour-5"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-6"><a href="<c:url value="/"/>">shopping
 						search</a></li>
-				<li class="colour-6"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-7"><a href="<c:url value="/"/>">shopping
 						search</a></li>
-				<li class="colour-7"><a href="<c:url value="/gallery"/>">shopping
-						search</a></li>
-				<li class="colour-8"><a href="<c:url value="/gallery"/>">shopping
+				<li class="colour-8"><a href="<c:url value="/"/>">shopping
 						search</a></li>
 			</ul>
 		</nav>
